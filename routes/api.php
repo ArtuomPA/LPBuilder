@@ -18,4 +18,4 @@ use App\Http\Controllers\api\v1\RegistrationController;
 Route::post('register', 'App\Http\Controllers\api\v1\RegistrationController@register');
 
 Route::post('login', 'App\Http\Controllers\api\v1\LoginController@login');
-Route::post('login', 'App\Http\Controllers\api\v1\LoginController@login');
+Route::post('logout', 'App\Http\Controllers\api\v1\LoginController@logout');
