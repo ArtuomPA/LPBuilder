@@ -17,11 +17,9 @@ class CreateSitesTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->string('color_scheme');
-            $table->string('background_img');
             $table->string('favicon');
             $table->string('logo');
-            $table->string('template');
+            $table->integer('template');
             $table->integer('user_id')->unsigned()->index();
             $table->timestamps();
         });

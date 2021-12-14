@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
+use App\Models\Template;
 
 class Site extends Model
 {
@@ -13,5 +14,9 @@ class Site extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function templates() {
+        return $this->hasMany(Template::class);
     }
 }
